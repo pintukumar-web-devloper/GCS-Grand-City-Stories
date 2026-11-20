@@ -6,126 +6,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#100817">
 
-  <title>GCS — Grand City Stories</title>
+  <title>GCS — GRAND CITY STORIES</title>
 
-  <meta
-    name="description"
-    content="GCS Grand City Stories — The City Never Sleeps. An open-world experience by PK Games."
-  >
+  <meta name="description" content="Enter Angel Valley in GCS — Grand City Stories, an original open-world Indian city game by PK Games.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- INTRO: PK GAMES -->
+  <!-- PK GAMES STUDIO INTRO -->
   <section id="studio-intro" class="studio-intro">
     <div class="studio-logo">
-      <div class="logo-symbol">PK</div>
-      <div class="studio-name">PK GAMES</div>
-      <div class="studio-subtitle">P R E S E N T S</div>
+      <div class="pk-symbol">PK</div>
+      <h1>PK GAMES</h1>
+      <p>PRESENTS</p>
     </div>
   </section>
 
   <!-- LOADING SCREEN -->
-  <section id="loading-screen" class="loading-screen">
+  <section id="loading-screen" class="loading-screen" hidden>
     <div class="loading-content">
-      <div class="loading-title">GCS</div>
-      <div class="loading-caption">GRAND CITY STORIES</div>
+      <p class="loading-publisher">PK GAMES ORIGINAL</p>
+
+      <h1>GCS</h1>
+      <h2>GRAND CITY STORIES</h2>
+
+      <p>ENTERING ANGEL VALLEY</p>
+
       <div class="loading-track">
         <div class="loading-progress"></div>
       </div>
-      <p>LOADING ANGEL VALLEY...</p>
+
+      <p>PREPARING YOUR WORLD...</p>
     </div>
   </section>
 
   <!-- MAIN MENU -->
-  <main id="main-menu" class="main-menu">
+  <main id="main-menu" class="main-menu" hidden>
 
-    <div class="menu-top">
+    <header class="topbar">
       <div class="publisher">
-        <span class="publisher-pk">PK</span>
-        <span class="publisher-name">GAMES</span>
-        <span class="publisher-presents">P R E S E N T S</span>
+        <span>PK GAMES</span>
+        <small>PRESENTS</small>
       </div>
 
       <div class="game-version">VERSION 1.0.0</div>
-    </div>
+    </header>
 
-    <div class="menu-brand">
-      <div class="city-name">ANGEL VALLEY</div>
+    <section id="menu-brand" class="menu-brand">
+      <p class="city-label">WELCOME TO</p>
 
-      <h1 class="game-logo">GCS</h1>
+      <h1>ANGEL VALLEY</h1>
 
-      <div class="game-full-name">
-        GRAND CITY STORIES
+      <div class="game-title">
+        <span>GCS</span>
+        <h2>GRAND CITY STORIES</h2>
       </div>
 
-      <div class="game-tagline">
-        THE CITY NEVER SLEEPS
-      </div>
-    </div>
+      <p class="tagline">THE CITY NEVER SLEEPS</p>
+    </section>
 
-    <!-- MAIN NAVIGATION -->
-    <nav class="main-navigation" aria-label="Main menu">
+    <nav class="main-navigation">
 
-      <button id="continue-button" class="menu-button primary-button">
-        <span class="button-icon">▶</span>
-        <span class="button-label">CONTINUE</span>
-        <span class="button-arrow">›</span>
+      <button id="continue-button" class="menu-button">
+        CONTINUE
       </button>
 
-      <button id="new-game-button" class="menu-button">
-        <span class="button-icon">✦</span>
-        <span class="button-label">NEW GAME</span>
-        <span class="button-arrow">›</span>
+      <button id="new-game-button" class="menu-button primary-button">
+        NEW GAME
       </button>
 
       <button id="game-modes-button" class="menu-button">
-        <span class="button-icon">★</span>
-        <span class="button-label">GAME MODES</span>
-        <span class="button-arrow">›</span>
+        GAME MODES
       </button>
 
       <button id="settings-button" class="menu-button">
-        <span class="button-icon">⚙</span>
-        <span class="button-label">SETTINGS</span>
-        <span class="button-arrow">›</span>
+        SETTINGS
       </button>
 
       <button id="social-button" class="menu-button">
-        <span class="button-icon">♟</span>
-        <span class="button-label">SOCIAL CLUB</span>
-        <span class="button-arrow">›</span>
+        SOCIAL CLUB
       </button>
 
       <button id="quit-button" class="menu-button">
-        <span class="button-icon">⏻</span>
-        <span class="button-label">QUIT GAME</span>
-        <span class="button-arrow">›</span>
+        QUIT GAME
       </button>
 
     </nav>
 
-    <!-- FOOTER CREDITS -->
-    <footer class="menu-footer">
-      <div class="creator-credit">
-        <span>CREATED BY</span>
-        <strong>PINTU KUMAR</strong>
-      </div>
-
-      <div class="studio-credit">
-        <span>STUDIO:</span>
-        <strong>PK GAMES</strong>
-      </div>
+    <footer class="main-footer">
+      <p>CREATED BY PINTU KUMAR</p>
+      <p>STUDIO: PK GAMES</p>
     </footer>
 
   </main>
@@ -135,91 +121,73 @@
 
     <header class="mode-header">
       <button id="back-to-menu" class="back-button">
-        ‹ BACK
+        BACK
       </button>
 
-      <div class="mode-header-brand">GCS</div>
-      <div class="mode-header-studio">PK GAMES</div>
+      <span>PK GAMES</span>
     </header>
 
-    <div class="mode-heading">
-      <p>WELCOME TO ANGEL VALLEY</p>
-      <h2>CHOOSE YOUR WORLD</h2>
-      <span>SELECT YOUR GAME MODE</span>
-    </div>
+    <div class="mode-content">
 
-    <div class="mode-grid">
+      <p class="mode-subtitle">YOUR CITY. YOUR RULES.</p>
 
-      <button id="free-world" class="mode-card">
-        <span class="mode-number">01</span>
-        <span class="mode-card-title">FREE WORLD</span>
-        <span class="mode-card-description">
-          Explore Angel Valley
-        </span>
-        <span class="mode-card-action">SELECT MODE ›</span>
-      </button>
+      <h1>CHOOSE YOUR WORLD</h1>
 
-      <button id="chor-police" class="mode-card">
-        <span class="mode-number">02</span>
-        <span class="mode-card-title">CHOR POLICE</span>
-        <span class="mode-card-description">
-          Chase and Escape
-        </span>
-        <span class="mode-card-action">SELECT MODE ›</span>
-      </button>
+      <div class="mode-grid">
 
-      <button id="adventure" class="mode-card">
-        <span class="mode-number">03</span>
-        <span class="mode-card-title">ADVENTURE</span>
-        <span class="mode-card-description">
-          Discover Your Story
-        </span>
-        <span class="mode-card-action">SELECT MODE ›</span>
-      </button>
+        <button id="free-world" class="mode-button">
+          <span>01</span>
+          <strong>FREE WORLD</strong>
+          <small>Explore Angel Valley</small>
+        </button>
 
-      <button id="multiplayer" class="mode-card">
-        <span class="mode-number">04</span>
-        <span class="mode-card-title">MULTIPLAYER</span>
-        <span class="mode-card-description">
-          Play With Friends
-        </span>
-        <span class="mode-card-action">SELECT MODE ›</span>
-      </button>
+        <button id="chor-police" class="mode-button">
+          <span>02</span>
+          <strong>CHOR POLICE</strong>
+          <small>Coming Soon</small>
+        </button>
 
+        <button id="adventure" class="mode-button">
+          <span>03</span>
+          <strong>ADVENTURE</strong>
+          <small>Coming Soon</small>
+        </button>
+
+        <button id="multiplayer" class="mode-button">
+          <span>04</span>
+          <strong>MULTIPLAYER</strong>
+          <small>Coming Soon</small>
+        </button>
+
+      </div>
     </div>
 
     <footer class="mode-footer">
-      THE CITY NEVER SLEEPS — PK GAMES
+      THE CITY NEVER SLEEPS
     </footer>
 
   </section>
 
-  <!-- MESSAGE / ERROR AREA -->
-  <div id="game-message" class="game-message" role="status"></div>
+  <!-- GAME MESSAGES -->
+  <div id="game-message" class="game-message" hidden></div>
 
+  <!-- ERROR SCREEN -->
   <section id="error-screen" class="error-screen" hidden>
-    <h2>GAME ERROR</h2>
-    <p id="error-message">
-      Something went wrong. Please try again.
-    </p>
-    <button id="error-back-button" class="menu-button">
-      BACK TO MENU
-    </button>
+    <div class="error-content">
+      <h1>WORLD UNAVAILABLE</h1>
+
+      <p id="error-message">
+        Something went wrong while loading the game.
+      </p>
+
+      <button id="error-back-button" class="menu-button">
+        BACK TO MENU
+      </button>
+    </div>
   </section>
 
-  <!-- THREE.JS LIBRARY FOR FUTURE 3D WORLD -->
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
-    }
-  }
-  </script>
-
-  <!-- MAIN GAME SCRIPT -->
-  <script type="module" src="./js/main.js"></script>
+  <!-- MAIN GAME CONTROLLER -->
+  <script type="module" src="./js/js/main.js"></script>
 
 </body>
-  </html>
-  
+</html>
