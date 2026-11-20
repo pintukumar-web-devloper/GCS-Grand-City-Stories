@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   min-height: 100%;
   background: var(--bg);
@@ -53,7 +57,7 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-/* INTRO */
+/* STUDIO INTRO */
 
 #studio-intro {
   position: fixed;
@@ -97,7 +101,7 @@ button:focus-visible {
   font-size: 10px;
 }
 
-/* LOADING */
+/* LOADING SCREEN */
 
 #loading-screen {
   position: fixed;
@@ -132,9 +136,10 @@ button:focus-visible {
   width: 0%;
   height: 100%;
   background: var(--gold);
+  transition: width 0.2s ease;
 }
 
-/* MAIN MENU */
+/* MAIN MENU AND MODE SCREEN */
 
 #main-menu,
 #mode-select {
@@ -195,7 +200,7 @@ button:focus-visible {
   letter-spacing: 0.12em;
 }
 
-/* BRAND */
+/* GAME BRAND */
 
 #menu-brand {
   position: relative;
@@ -231,7 +236,7 @@ button:focus-visible {
   letter-spacing: 0.32em;
 }
 
-/* MENU BUTTONS */
+/* MAIN MENU BUTTONS */
 
 #main-menu nav {
   display: flex;
@@ -309,7 +314,7 @@ button:focus-visible {
   letter-spacing: 0.12em;
 }
 
-/* MODE SELECTION */
+/* GAME MODE SELECTION */
 
 #mode-select {
   display: flex;
@@ -367,7 +372,7 @@ button:focus-visible {
   font-size: 10px;
 }
 
-/* MESSAGES */
+/* GAME MESSAGES */
 
 #game-message {
   position: fixed;
@@ -384,6 +389,8 @@ button:focus-visible {
   transform: translateX(-50%);
   backdrop-filter: blur(12px);
 }
+
+/* ERROR SCREEN */
 
 #error-screen {
   position: fixed;
@@ -421,8 +428,8 @@ button:focus-visible {
   from {
     opacity: 0;
     transform: translateY(18px);
-    letter-spacing: 0.4em;
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -437,7 +444,7 @@ button:focus-visible {
   }
 }
 
-/* RESPONSIVE DESIGN */
+/* MOBILE RESPONSIVE */
 
 @media (max-width: 600px) {
   #main-menu {
@@ -487,6 +494,8 @@ button:focus-visible {
   }
 }
 
+/* REDUCED MOTION ACCESSIBILITY */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -495,4 +504,4 @@ button:focus-visible {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
-  }
+}
